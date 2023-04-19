@@ -160,7 +160,7 @@ li {
 
 article {
     grid-column: 2/3;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 /* Section home */
