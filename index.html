@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant&family=Sansita:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hi my name is Igor</h1>
+    </header>
+    <main>
+        <nav id="navigation" class="hide preload">
+            <ul>
+                <li>
+                    <button id="btn-home">
+                        <span class="btn-text">Home</span>
+                        <span id="btn-home-select"> </span>
+                    </button>
+                </li>
+                <li id="btn-projects">
+                    <button>
+                        <span class="btn-text">Projects</span>
+                        <span id="btn-projects-select"> </span>
+                    </button>
+                </li>
+                <li>
+                    <button id="btn-contact">
+                        <span class="btn-text">Contact</span>
+                        <span id="btn-contact-select"> </span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <section id="section-home">
+                <div class="center-grid">
+                    <div class="center-box">
+                        <h2>About me</h2>
+                        <p class="paragraph">
+                            Hi My name is Igor - as you noticed by the big text on the top of the page :)
+                        </p>
+                        <p class="paragraph">
+                            I'm  a music enthusiast (both as a creator and a listener) and a lover of abstract and philosophical topics. I'm also a gamer and an aspiring writer.
+                        </p>
+                        <p class="paragraph">
+                            Right now I'm on my way on some kind of reinforcement - from programming to UX/UI design. During this adventure I've started to create UX/UI projects, which you can find under the Projects tab.
+                        </p>
+                        <p class="paragraph">
+                            I chose such colours and fonts to make me smile! These colours remind me 60's with their psychodelic music and designs. Please notice that this page is mobile ready (it shouldn't be a surprise nowadays).
+                        </p>
+                        <p class="paragraph">
+                            I hope you enjoy watching it as much as I do :)
+                        </p>
+                        <ul id="links-box" >
+                            <li>
+                                <a href="https://github.com/IgorKIX" target="_blank">
+                                    <img alt="github icon" src="./assets/github_icon.svg" class="icon-40 icon-github">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/igor-klosinski" target="_blank">
+                                    <img alt="linkedin icon" src="./assets/linkedin_icon.svg" class="icon-40 icon-linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:igor.klos@pm.me">
+                                    <img alt="email icon" src="./assets/email_icon.svg" class="icon-40 icon-email">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Igor_Klosinski_CV.pdf" target="_blank">
+                                    <img alt="cv icon" src="./assets/cv_icon.svg" class="icon-40 icon-cv icon-btn">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="section-projects">
+                <h2>Feel free to check my projects</h2>
+                <ul id="list-projects">
+                    <li class="img-container">
+                        <a href="./assets/Dark_bean_project.pdf" target="_blank">
+                            <img id="dark-bean-img" src="./assets/dark_bean.png" alt="Mobile app Dark Bean project">
+                            <div class="img-description">
+                                <h3>Dark bean cafe</h3>
+                                <p>App for booking a place at the cafe.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="img-container">
+                        <div class="img-description-empty">
+                            <h3>Work in progress!</h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="section-contact">
+                <div class="center-grid">
+                    <div class="center-box">
+                        <h2>Contact links</h2>
+                        <ul>
+                            <li class="link">
+                                <a href="mailto:igor.klos@pm.me">igor.klos@pm.me</a>
+                                <button id="btn-copy" onclick="copyMail()"><img alt="copy icon" class="icon icon-btn" src="assets/copy_icon.svg"></button>
+                            </li>
+                            <li class="link">
+                                <a href="https://github.com/IgorKIX" target='_blank'>github</a>
+                                <img alt="go to outside source icon" class="icon icon-grey" src="assets/link_external_icon.svg">
+                            </li>
+                            <li class="link">
+                                <a href="https://linkedin.com/in/igor-klosinski" target='_blank'>linkedin</a>
+                                <img alt="go to outside source icon" class="icon icon-grey" src="assets/link_external_icon.svg">
+                            </li>
+                            <li class="link">
+                                <a href="./assets/Igor_Klosinski_CV.pdf" target='_blank'>curriculum vitae</a>
+                                <img alt="cv icon" src="./assets/cv_icon.svg" class="icon icon-grey icon-cv-20">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <button id="btn-menu">el menu</button>
+</body>
+</html>
