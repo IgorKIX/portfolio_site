@@ -221,6 +221,16 @@ img {
     object-position: 0 0;
 }
 
+/* Again for our friends on safari */
+@media not all and (min-resolution:.001dpcm) { @media {
+    img {
+        width: initial;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+}}
+
 .img-description {
     position: absolute;
     top: 0;
