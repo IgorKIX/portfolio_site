@@ -10,11 +10,16 @@
     --gray: #C4C4C4;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: minmax(32px, 4%) minmax(auto, 92%) minmax(32px, 4%);
     grid-template-rows: auto 1fr;
+    color: black; /* For our dear friends on safari */
 }
 
 header {
@@ -115,7 +120,7 @@ li {
     background: inherit;
     margin: 4px 0 auto .5rem;
     height: 30px;
-    width: fit-content;
+    width: auto;
 }
 
 .icon-github:hover {
@@ -155,6 +160,7 @@ li {
 
 article {
     grid-column: 2/3;
+    overflow: scroll;
 }
 
 /* Section home */
@@ -290,7 +296,7 @@ nav ul li {
 .btn-home-open {
     background: white;
     position: absolute;
-    width: 96px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -3px;
@@ -301,7 +307,7 @@ nav ul li {
 #btn-home:hover .btn-home-close {
     background: var(--gray);
     position: absolute;
-    width: 96px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -3px;
@@ -312,7 +318,7 @@ nav ul li {
 .btn-projects-open {
     background: white;
     position: absolute;
-    width: 124px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -3px;
@@ -323,7 +329,7 @@ nav ul li {
 #btn-projects:hover .btn-projects-close {
     background: var(--gray);
     position: absolute;
-    width: 124px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -3px;
@@ -334,7 +340,7 @@ nav ul li {
 .btn-contact-open {
     background: white;
     position: absolute;
-    width: 120px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -1px;
@@ -345,12 +351,81 @@ nav ul li {
 #btn-contact:hover .btn-contact-close {
     background: var(--gray);
     position: absolute;
-    width: 119px;
+    width: 101%;
     top: 21px;
     height: 12px;
     right: -3px;
     z-index: 1;
     border-radius: 4px;
+}
+
+/* For our dear friends on Firefox */
+@supports (-moz-appearance:none) {
+    .btn-home-open {
+        background: white;
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -2px;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    #btn-home:hover .btn-home-close {
+        background: var(--gray);
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -2px;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .btn-projects-open {
+        background: white;
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -3px;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    #btn-projects:hover .btn-projects-close {
+        background: var(--gray);
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -3px;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .btn-contact-open {
+        background: white;
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -1px;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    #btn-contact:hover .btn-contact-close {
+        background: var(--gray);
+        position: absolute;
+        width: 101%;
+        top: 21px;
+        height: 12px;
+        right: -3px;
+        z-index: 1;
+        border-radius: 4px;
+    }
 }
 
 #btn-menu {
