@@ -202,7 +202,7 @@ article {
     padding: 0;
     display: grid;
     grid-gap: 1rem;
-    /*grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
 li a {
@@ -534,7 +534,6 @@ nav ul li {
     }
 
     article {
-        overflow: scroll;
         height: 100%;
     }
 
